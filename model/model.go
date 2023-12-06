@@ -1,7 +1,7 @@
 package model
 
 type OTPData struct {
-	phoneNumber string  `json: "phoneNumber, omitempty" validate:"required`;
+	PhoneNumber string  `json: "phoneNumber, omitempty" validate:"required`;
 }
 type VerifyOTPData struct {
 	User *OTPData  `json: "user, omitempty" validate:"required`;

@@ -13,7 +13,7 @@ func loadEnvVariables() {
 	}
 }
 
-func envACCOUNTID() string {
+func envACCOUNTSID() string {
 	loadEnvVariables()
 	return os.Getenv("TWILIO_ACCOUNT_SID")
 }
@@ -25,7 +25,7 @@ func envAUTHTOKEN() string {
 }
 
 
-func envSERVICEID() string {
+func envSERVICESID() string {
 	loadEnvVariables()
 	return os.Getenv("TWILIO_SERVICES_ID")
 }

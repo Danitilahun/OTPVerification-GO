@@ -10,6 +10,6 @@ type Config struct {
 
 
 func (app *Config) Routes() {
-	app.Router.POST("/otp", app.OTP);
-	app.Router.POST("/verify", app.VerifyOTP);
+	app.Router.POST("/otp", app.sendSMS());
+	app.Router.POST("/verifyOTP", app.verifySMS());
 }
